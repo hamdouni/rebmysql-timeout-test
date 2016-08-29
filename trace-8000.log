@@ -1,0 +1,25 @@
+29/8-18:55:13.459130-[RSP] ##RSP Script Error: 
+
+	URL  = /index.rsp
+	File = ./index.rsp
+
+	** Access Error : Network timeout 
+	** Where: read 
+	** Near:  [do-sql/flat 'bugs "SELECT SLEEP(10)" __txt 251] 
+
+
+Request  = make object! [
+    headers: [Host "0.0.0.0:8000" Connection "keep-alive" Cache-Control "max-age=0" Upgrade-Insecure-Requests "1" User-Agent {Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36} Accept {text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8} Accept-Encoding "gzip, deflate, sdch" Accept-Language "fr,en-US;q=0.8,en;q=0.6"]
+    status-line: #{474554202F696E6465782E72737020485454502F312E310D0A}
+    method: 'GET
+    url: "/index.rsp"
+    content: none
+    path: "/"
+    target: "index.rsp"
+    arg: none
+    ext: '.rsp
+    version: none
+    file: %./index.rsp
+    script-name: none
+    ws?: none
+]

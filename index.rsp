@@ -1,0 +1,25 @@
+<html>
+
+<%  system/schemes/default/timeout: 2 %>
+<%= system/schemes/default/timeout %>
+
+<hr>
+
+<%
+  port: do-sql/info 'bugs ""
+  print port/timeout
+%>
+
+<hr>
+
+<%
+  port/timeout: 20
+  port/sub-port/timeout: 20
+  print port/timeout
+%>
+
+<hr>
+
+<%= print do-sql/flat 'bugs "SELECT SLEEP(10)" %>
+
+</html>
